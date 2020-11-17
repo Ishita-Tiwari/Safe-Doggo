@@ -50,7 +50,7 @@ Hey, You are done! If you wish to view the details for which you have generated 
 1. After heading to [Safe Doggo](https://safe-doggo.herokuapp.com/), click on 'Quick Try' present in the navigation bar.
 
       <p align="center">
-         <img src="![image](https://user-images.githubusercontent.com/51106967/99443534-f4677a00-2940-11eb-85b9-dbef330cef50.png)" alt="drawing" width="650"/>
+         <img src="https://user-images.githubusercontent.com/51106967/99443534-f4677a00-2940-11eb-85b9-dbef330cef50.png" alt="drawing" width="650"/>
       </p>
 
 Enter the necessary details and submit. You're done!
