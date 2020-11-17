@@ -29,7 +29,7 @@ Safe Doggo brings to you another way to keep your pet safe. This website is buil
 
 Hey, You are done! If you wish to view the details for which you have generated QR codes, head back to your profile and scroll down. You can delete any irrelevant detail or regenrate the QR code by clicking on the send button. Here is the text which appeard on scanning the provided QR code.
 
-   ![image](https://user-images.githubusercontent.com/51106967/99424894-3801ba00-2928-11eb-847d-7123c4903576.png)
+   ![image](https://user-images.githubusercontent.com/51106967/99424894-3801ba00-2928-11eb-847d-7123c4903576.png =200x)
 
 
 
