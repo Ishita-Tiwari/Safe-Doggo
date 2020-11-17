@@ -27,7 +27,7 @@ Safe Doggo brings to you another way to keep your pet safe. This website is buil
 1. Fill the 'Details' box as per your need. This is the text which will be displayed when the generated QR code is scanned.
 
       <p align="center">
-         <img src="https://user-images.githubusercontent.com/51106967/99422039-15ba6d00-2925-11eb-8c35-23da381ef870.png" alt="drawing" width="650"/>
+         <img src="![image](https://user-images.githubusercontent.com/51106967/99443534-f4677a00-2940-11eb-85b9-dbef330cef50.png)" alt="drawing" width="650"/>
       </p>
 
 1. You will be redirected to a new page from where you can save the QR code.
