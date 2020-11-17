@@ -1,5 +1,7 @@
 # Safe Doggo
 
+This website provides a QR code meant to be used as your pet's tag as a source of additional safety. 
+
 Safe Doggo brings to you another way to keep your pet safe. This website is built with HTML, CSS, JS, Nodejs - Express Js. Other libraries used are, mongoose, nodemailer, qrcode etc. The backend runs on MongoDB Atlas. You can head to the website and try the feature provided by it. 
 
 
