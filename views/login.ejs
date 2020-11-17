@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/log.css">
+</head>
+<body style="margin: 0px;">
+    <div class="navbar">
+         <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 147px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+                <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <!-- left images -->
+    <div class="left">
+        <img src="../img/p46.jpeg" class="p1">
+        <img src="../img/p48.jpg" class="p2">
+        <img src="../img/p47.jpeg" class="p3">
+    </div>
+    
+
+    <!-- form -->
+    <div class="card">
+        <br><br>
+        <form class="login-form" action="/login" name="form1" method="post" ng-app="myApp" ng-controller="validateCtrl" novalidate>
+            <div class="heading">
+                Welcome Back
+            </div>
+            <!-- <p class="heading">Login Form</p> -->
+            <p>Username:</p>
+            <input class="user-input" type="text" name="username" placeholder="Username" ng-model="user" required><br><br>
+            <span style="color:red" ng-show="form1.user.$dirty">
+            </span>
+            <p>Password: </p>
+            <input class="user-input" type="password" name="password" placeholder="Password" ng-model="password" id="pass" required><br><br><br><br>
+            <span style="color:red" ng-show="form1.password.$dirty && form1.password.$invalid">
+            </span>
+            
+            <button type="submit" class="btn">Log in!</button><br>
+
+            <div class="reg">
+                <p>Not Registered? <a href="/register">Create an Account</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+  <script>
+      var app = angular.module('myApp', []);
+      app.controller('validateCtrl', function($scope) {
+        $scope.user = '';
+        $scope.password = '';
+      });
+  </script>
+  
+  <script type="text/javascript">
+    $('.options-02 a').click(function(){
+      $('form').animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    });
+    </script>
+
+</html>

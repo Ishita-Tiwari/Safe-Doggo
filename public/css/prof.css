@@ -1,0 +1,171 @@
+body{
+    background: #121312;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* instruction */
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 540px;
+    margin-left: 160px;
+    margin-top: 100px;
+    /* position: fixed; */
+}
+.card p{
+    text-align: center;
+    font-size: 23px;
+    color: #ffea2a;
+    line-height: 35px;
+    margin: 50px;
+}
+.card h1{
+    text-align: center;
+}
+.heading{
+    margin-top: -45px;
+    background-color: #35fff5b0;
+    color: rgba(17, 9, 9, 0.733);
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* form */
+.card2{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 565px;
+    margin-left: 120px;
+    margin-top: 115px;
+    transition: transform 2s;
+    /* position: fixed; */
+    /* overflow-y: scroll; */
+    /* overflow-x: scroll; */
+
+}
+.card2 p{
+    text-align: center;
+    font-size: 25px;
+    color: #35fff5b0;
+}
+.card2 textarea{
+    margin-left: 54px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    border: thin;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
+    color: rgb(23, 24, 68);
+    word-wrap: break-word;
+}
+.card2 textarea:hover{
+    box-shadow: 0 0 1px rgb(66, 65, 65);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+#btn{
+    background-color: #35fff5b0;
+    color: #121312cb;
+    margin-left: 125px;
+    border: none;
+    margin: none;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+#btn:hover, .user:active, .pswd:active{
+    background-color: #ffea2a;
+}
+.heading2{
+    margin-top: -45px;
+    background-color: #ffea2a;
+    color: #121312cb;
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* deets */
+.card3{
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 1000px;
+    border-radius: 10px;
+    color: #35fff5b0;
+    transition: transform 0.5s;
+}
+.card3 p{
+    /* text-align: center; */
+    font-size: 21px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 32px;
+    margin: 50px;
+}
+.card3:hover{
+    /* color: #ffea2a; */
+    background-color: rgba(100, 99, 99, 0.404);
+    transform: scale(1.03);
+    /* border: 1px solid grey; */
+}
+
+/* Entries */
+#entries{
+    margin-top: 80px;
+    margin-left: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 34px;
+    color: #ffea2a;
+}
+
+/* delete button */
+#del{
+    background-color: #ffffffcb;
+    color: #ff3535b0;
+    margin-left: 950px;
+    border: none;
+    margin: none;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    
+}
+#del:hover{
+    background-color: #ff3535b0;
+    color: #ffffffcb;
+
+}
+/* generate again - regen */
+#regen{
+    background-color: #ffffffcb;
+    color: #0c8d00da;
+    margin-left: 950px;
+    border: none;
+    margin: none;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+}
+#regen:hover{
+    background-color: #0c8d00da;
+    color: #ffffffcb;
+
+}

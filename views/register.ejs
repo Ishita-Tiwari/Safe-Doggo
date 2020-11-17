@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    
+</head>
+<body style="margin: 0px">
+
+    <!-- navbar -->
+    <div class="navbar">
+         <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 147px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+            <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- right images -->
+    <div class="right">
+        <img src="../img/p50.jpg" class="p1">
+        <img src="../img/p52.jpg" class="p2">
+        <img src="../img/p51.jpg" class="p3">
+        <img src="../img/p54.jpg" class="p4">
+    </div>
+
+    <% if (typeof message !== 'undefined' && message.length > 0) { %>
+        <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+         This username is already registered.
+        </div>
+    <% } %>
+        
+
+    <!-- registration form -->
+    <div class="card">
+        <form action="/register" method="POST">
+            <div class="heading">
+                Registration form
+            </div>
+            <p>Username:</p>
+            <input type="text" name="username" placeholder="Username" required><br>
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="Email Address" required><br>
+            <p>Password:</p>
+            <input type="password" name="password" placeholder="Password" required>
+            <br><br><br>
+            <button type="submit" class="btn">Register!</button>
+
+            <div class="reg">
+                <p>Already Registered? <a href="/login">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

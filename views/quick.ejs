@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Try</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/quick.css">
+</head>
+<body style="margin: 0px;">
+        <!-- navbar -->
+    <div class="navbar">
+         <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 147px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+            <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- intro of quick try -->
+    <div class="card">
+        <div class="heading">
+                Quick Try
+        </div>
+        <!-- <h1>Quick Try?</h1> -->
+        <p>If you wish to spend the least amount of time in getting your job done, 
+        Quick Try is meant for you. Quick Try provides you with an option to create 
+        qr code without having to login. In the form provided here, go ahead and 
+        enter the text you wish the QR code to display on being scanned. Click "Generate My QR Code"
+        and that's it! You will have your QR code right here!
+        </p>
+    </div>
+    
+    
+
+    <!-- form which takes details as input -->
+    <div class="card2">
+        <form action="/quick" method="POST">
+            <div class="heading2">
+                Pet form
+            </div>
+            <p>Details:</p>
+            <textarea type="text" name="details" placeholder="Details" required></textarea><br>
+            <br><br>
+            <button type="submit" class="btn">Generate My QR Code!</button>
+        </form>
+    </div>
+</body>
+</html>

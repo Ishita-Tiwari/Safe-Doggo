@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/parallax.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,300,700">
+</head>
+<body style="margin: 0px">
+    
+
+    <!-- navbar -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 160px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+            <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+                    
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- main section -->
+    <h1 class="parallax">...</h1>
+
+    <img src="../img/p43.jpg" class="parallax  skyline">
+    <img src="../img/p42.jpg" class="parallax  blimp">
+    <img src="../img/p20.jpg" class="parallax  gherkin">
+    <img src="../img/p39.jpg" class="parallax  dino">
+    <img src="../img/p44.jpg" class="parallax  bull">
+
+    <div class="parallax  box" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+    <p style="font-size: 28px; color: skyblue; font-weight: 450;">Welcome to Safe Doggo</p>
+        <p>If you wish to provide your pet with a little more of security,
+        we are here to help you with it. We provide you with a QR code 
+        that can be scanned at any point of time. This QR code can pe used 
+        as a tag on your pet's collar as an accessory and when it is scanned, 
+        the details entered by you about your pet are displayed. This makes
+        it easy for anyone to contact you in case of emergency. There are no 
+        chances of errors either!<br><br>
+        <!-- <img src="../img/p27.jpg" alt="loading"> -->
+        <p style="font-size: 28px; color: slateblue; font-weight: 450;">How to get started?</p>
+        <p>Login or Register, enter the basic details that you wish to be displayed.
+        Proceed to click submit and get your QR code.
+        <br>
+        If you wish to generate a QR code without having to register/login, feel free to click 
+            on 'Quick Try' and get started!
+        </p>
+    </div>
+
+    <!-- <a href="/login" class="parallax  btn">Login</a> -->
+    <% if(!currentUser){ %>
+    <a href="/login" class="parallax  btn">Login</a>
+    <%	} else { %>
+    <a href="/profile" class="parallax  btn">Profile</a>
+    <%	} %>
+
+</body>
+</html>
+
+<script src="../js/home.js"></script>

@@ -1,0 +1,122 @@
+body{
+     background: #121312;
+     background-repeat: no-repeat;
+     color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+img {
+	width: 20%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 500px;
+    margin-left: 870px;
+    margin-top: 87px;
+    border-top: 5px solid tomato;
+    transition: transform 2s;
+}
+.card p{
+    text-align: center;
+    font-size: 25px;
+    color: tomato;
+}
+.card input{
+    margin-left: 54px;
+    width: 292px;
+    height: 34px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 3px;
+    border: thin;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
+    color: rgb(23, 24, 68);
+}
+.card input:hover{
+    border-left: solid 5px teal;
+    border-right: solid 5px teal;
+    box-shadow: 0 0 1px rgb(66, 65, 65);
+}
+
+.p1 {
+    width: 340px;
+    margin-left: -60px;
+    margin-top: 15px;;
+    position: fixed;
+    transition: transform 3s;
+}
+.p2 {
+    width: 340px;
+    margin-left: 0px;
+    margin-top: 380px;
+    position: fixed;
+    transition: transform 3s;
+}
+.p3{
+    width: 360px;
+    margin-left: 200px;
+    margin-top: 200px;
+    position: fixed;
+    transition: transform 3s;
+}
+button{
+    background-color: teal;
+    color: white;
+    margin-left: 125px;
+    border: none;
+    margin: none;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+button:hover, .user:active, .pswd:active{
+    background-color: royalblue;
+}
+input.ng-invalid.ng-dirty{
+    border-bottom: 3px solid rgb(250, 0, 0);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.reg{
+    margin-top: 75px;
+}
+.reg p{
+    text-align: center;
+    font-size: 18;
+}
+.reg a{
+    text-decoration: none;
+    color: teal;
+}
+.reg a:hover{
+    color: royalblue;
+}
+.heading{
+    margin-top: -65px;
+    background-color: tomato;
+    /* color: white; */
+    color: #121312cb;
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+.p1:hover{
+    transform: scale(1.1);
+}
+.p2:hover{
+    transform: scale(1.1);
+}
+.p3:hover{
+    transform: scale(1.1);
+}
+.card:hover{
+    transform: scale(1.01);
+}

@@ -1,0 +1,156 @@
+body{
+     background: #121312;
+     background-repeat: no-repeat;
+     color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 400px;
+    height: 500px;
+    margin-left: 170px;
+    margin-top: 100px;
+    border-top: 5px solid #6ac794;
+    transition: transform 2s;
+}
+.card p{
+    text-align: center;
+    font-size: 25px;
+    color: #6ac794;
+}
+.card input{
+    margin-left: 54px;
+    width: 292px;
+    height: 34px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 3px;
+    border: thin;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
+    color: rgb(23, 24, 68);
+}
+.card input:hover{
+    border-left: solid 5px slateblue;
+    border-right: solid 5px slateblue;
+    box-shadow: 0 0 1px rgb(66, 65, 65);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+button{
+    background-color: slateblue;
+    color: white;
+    margin-left: 125px;
+    border: none;
+    margin: none;
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+button:hover, .user:active, .pswd:active{
+    background-color: royalblue;
+}
+.reg{
+    margin-top: 40px;
+}
+.reg p{
+    text-align: center;
+    font-size: 18;
+}
+.reg a{
+    text-decoration: none;
+    color: slateblue;
+}
+.reg a:hover{
+    color: royalblue;
+}
+.p1 {
+    width: 450px;
+    margin-left: 770px;
+    margin-top: 20px;;
+    position: fixed;
+    box-shadow: 5px 10px 8px #1a1919;
+    transition: transform 3s;
+}
+.p2 {
+    width: 340px;
+    margin-left: 615px;
+    margin-top: 165px;
+    position: fixed;
+    box-shadow: 5px 10px 8px #161616;
+    transition: transform 3s;
+}
+.p3{
+    width: 360px;
+    margin-left: 835px;
+    margin-top: 405px;
+    position: fixed;
+    box-shadow: 5px 10px 8px #161616;
+    transition: transform 3s;
+}
+.p4{
+    height: 260px;
+    margin-left: 770px;
+    margin-top: 295px;
+    position: fixed;
+    box-shadow: 5px 10px 8px #161616;
+    transition: transform 3s;
+}
+.p1:hover{
+    transform: scale(1.1);
+}
+.p2:hover{
+    transform: scale(1.1);
+}
+.p3:hover{
+    transform: scale(1.1);
+}
+.p4:hover{
+    transform: scale(1.1);
+}
+.card:hover{
+    transform: scale(1.01);
+}
+.heading{
+    margin-top: -45px;
+    background-color: #6ac794;
+    color: #121312cb;
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* error message */
+.alert {
+  width: 400px;
+  padding: 20px;
+  background-color: #f37269; /* Red */
+  color: #121312cb;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 450px;
+  box-shadow: 5px 10px 8px #161616;
+  position: fixed;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: 12#1312cb;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  line-height: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: white;
+}

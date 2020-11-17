@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/prof.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body style="margin: 0px;">
+
+    <!-- navbar -->
+    <div class="navbar">
+         <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 147px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+            <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+
+            </ul>
+        </nav>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <div class="card">
+                    <br>
+                    <div class="heading">
+                        Hey there!
+                        </div>
+                    <p>You have signed up for a little bit of awesomeness. How so?
+                    Enter your little pet's details as you wish the scanner to see and
+                    receive a QR code. Take the QR code and use is as a tag for your pet. 
+                    This tag can be scanned by anyone at any point of time to get your and 
+                    your pet's details! Fill in the details and click on generate QR code. (Refresh 
+                    the page after deleting your history, if needed.)</p>
+                    <br>
+                </div>
+            </td>
+
+            <td>
+                <div class="card2">
+                    <form action="/profile" method="POST">
+                        <div class="heading2">
+                            Pet form
+                        </div>
+                        <p>Details:</p>
+                        <textarea type="text" name="details" placeholder="Details" required></textarea><br>
+                        <br><br>
+                        <button type="submit" class="btn" id="btn">Generate My QR Code!</button>
+                    </form>
+                </div>
+
+            </td>
+        </tr>
+
+    </table>
+    <!-- instruction -->
+    <!-- <div class="card">
+        <br>
+        <div class="heading">
+               Hey there!
+            </div>
+        <p>You have signed up for a little bit of awesomeness. How so?
+        Enter your little pet's details as you wish the scanner to see and
+        receive a QR code. Take the QR code and use is as a tag for your pet. 
+        This tag can be scanned by anyone at any point of time to get your and 
+        your pet's details! Fill in the details and click on generate QR code.</p>
+        <br>
+    </div> -->
+
+    <!-- pet detail cards -->
+    <!-- <div class="card2">
+        <form action="/profile" method="POST">
+            <div class="heading2">
+                Pet form
+            </div>
+            <p>Details:</p>
+            <textarea type="text" name="details" placeholder="Details" required></textarea><br>
+            <br><br>
+            <button type="submit" class="btn" id="btn">Generate My QR Code!</button>
+        </form>
+    </div> -->
+    <br><br>
+
+    <!-- all the pets so far -->
+    <!-- username: 
+    <%=currentUser.username%> <br>
+    pets:
+    <%=currentUser.pet%> <br>
+    details: -->
+    
+    <div class="disp">
+        <% if(currentUser.pet.length > 0){ %>
+            <h2 id="entries">Your History</h2>
+        <% } %>
+
+        <% for (var i = 0; i < currentUser.pet.length; i++){ %>
+            <div class="card3" id="deets">
+                <br>
+                <p><%=currentUser.pet[i].detail%></p>
+                <br>
+            </div>
+            <!-- <form action="/del/<%=currentUser.pet[i].id%>"></form> -->
+            <!-- <a href="/del/<%=currentUser.pet[i].id%>" id="del"><i class="material-icons">delete</i></a> -->
+            <form action="/regen/<%=i%>" method="POST">
+                <button type="submit" id="regen" name=""><i class="material-icons">send</i></button>
+            </form>
+            <form action="/del/<%=currentUser.pet[i].id%>" method="POST">
+                <button type="submit" id="del" name=""><i class="material-icons">delete</i></button>
+            </form>
+        <% } %>
+
+        <br><br>
+    </div>
+    <br><br>
+    
+</body>
+</html>

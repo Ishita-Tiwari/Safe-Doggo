@@ -1,0 +1,131 @@
+body{
+     background: #121312;
+     background-repeat: no-repeat;
+     color: rgb(255, 255, 255);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* intro */
+.card{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 500px;
+    margin-left: 170px;
+    margin-top: 110px;
+    transition: transform 2s;
+    position: fixed;
+}
+.card p{
+    text-align: center;
+    font-size: 23px;
+    color: #6ac779;
+    line-height: 35px;
+    margin: 50px;
+}
+.card h1{
+    text-align: center;
+}
+.heading{
+    margin-top: -45px;
+    background-color: #e01b77b0;
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+/* form */
+.card2{
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 500px;
+    height: 500px;
+    margin-left: 770px;
+    margin-top: 110px;
+    transition: transform 2s;
+    position: fixed;
+}
+.card2 p{
+    text-align: center;
+    font-size: 25px;
+    color: #e01b77b0;
+}
+.card2 textarea{
+    margin-left: 54px;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px;
+    border: thin;
+    transition: 0.5s;
+    transition-property: border-left, border-right, box-shadow;
+    color: rgb(23, 24, 68);
+    word-wrap: break-word;
+}
+.card2 textarea:hover{
+    box-shadow: 0 0 1px rgb(66, 65, 65);
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+button{
+    background-color: #e01b77b0;
+    color: white;
+    margin-left: 125px;
+    border: none;
+    margin: none;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+button:hover, .user:active, .pswd:active{
+    background-color: #6ac779;
+}
+.heading2{
+    margin-top: -45px;
+    background-color: #6ac779;
+    color: #121312cb;
+    font-size: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+}
+
+/* created QR code */
+.qrc{
+    /* margin-top: 170px; */
+    margin-left: 530px;
+    width: 300px;
+    position: fixed;
+}
+.down{
+    margin-top: 120px;
+    text-align: center;
+    color: rgb(231, 150, 96);
+}
+
+.btn1{
+    background-color: rgb(231, 150, 96);
+    color: white;
+    margin-left: 125px;
+    border: none;
+    margin: none;
+    width: 250px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 6px;
+}
+.btn1:hover, .user:active, .pswd:active{
+    background-color: #6ab1c7;
+}
+.btn1{
+    margin-top: 350px;
+    margin-left: 550px;
+    position: fixed;
+}

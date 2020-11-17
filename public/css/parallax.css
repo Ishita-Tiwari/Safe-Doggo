@@ -1,0 +1,123 @@
+html {
+  /* Give our document a fake height for demo purposes. */
+	height: 1300px;
+  /* We must set out root `font-size` to 0 to prevent our parallax margins being calculated */
+  font-size: 0;
+	}
+
+body {
+  font-size: 16px;
+}
+
+.parallax {
+	position: fixed;
+	}
+
+
+h1 {
+	top: 95px;
+	margin-top: -3rem;
+	z-index: 5;
+}
+
+.box {
+	top: -1400px;
+  /* Positive margin, so it appears from above */
+	margin-top: 29rem;
+  /* Center and pad */
+	left: 50%;
+	margin-left: -27%;
+	padding: 2%;
+	width: 50%;
+	/* border-top: tomato; */
+}
+
+.btn {
+  top: 5em;
+  right: -800px;
+  margin-right: 18.5rem;
+}
+
+.skyline {
+	top: 240px;
+	margin-top: -28rem;
+	left: 8%;
+}
+
+.blimp {
+	top: 320px;
+	margin-top: -55rem;
+	left: 24%;
+}
+
+.gherkin {
+	top: 200px;
+	margin-top: -20rem;
+	left: 40%;
+	z-index: 10;
+}
+
+.bull {
+	top: 360px;
+	margin-top: -47rem;
+	left: 56%;
+}
+
+.dino {
+	top: 260px;
+	margin-top: -33rem;
+	left: 72%;
+}
+
+html {
+	/* background: #191a19 url('https://goo.gl/5wJBu') 50% 50%; */
+	background: #121312;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.5;
+	color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color:rgb(243, 167, 67);
+}
+
+h1 {
+  width: 100%;
+  font: 3em/1 'Oswald', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+img {
+	width: 20%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.box {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-top: 5px solid tomato;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 0;
+}

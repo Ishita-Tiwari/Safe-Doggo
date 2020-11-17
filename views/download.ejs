@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Try</title>
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/quick.css">
+</head>
+<body style="margin: 0px;">
+        <!-- navbar -->
+    <div class="navbar">
+         <nav>
+            <ul>
+                <div>
+                    <a href="/"><img src = "../img/logo.png" alt = "" class = "responsive-img" style = "width: 147px; float: left;"></a>
+                </div>
+                
+                <li><a href="/">Home</a></li>
+                <li><a href="/quick">Quick Try</a></li>
+                <% if(!currentUser){ %>
+                <li><a href="/login">Login</a></li>
+                <%	} else { %>
+                <li><a href="/profile">Profile</a></li>
+                <%	} %>
+
+            <% if(!currentUser){ %>
+                <li><a href="/register">Register</a></li>
+                <%	} else { %>
+                <li><a href="/logout">Logout</a></li>
+                <%	} %>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- display the QR code -->
+    <h2 class="down">Your QR code has been generated! Go ahead and save it</h2>
+    <img class="qrc" src=<%=qrrec%> alt="">
+    <form action="/quick" method="GET">
+        <button type="submit" class="btn1">Generate again!</button>
+    </form>
+    
+</body>
+</html>
