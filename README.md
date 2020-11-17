@@ -5,5 +5,11 @@ Safe Doggo brings to you another way to keep your pet safe. This website is buil
 
 ## Steps to be followed for a 'Quick Try'
 
-1. Head to the homepage [link to safe-doggo](https://safe-doggo.herokuapp.com/) and scroll down for instructions.
+1. Head to [Safe Doggo](https://safe-doggo.herokuapp.com/) and scroll down for instructions.
    
+      ![image](https://user-images.githubusercontent.com/51106967/99420242-01757080-2923-11eb-9eff-6f6be5ed08c9.png)
+
+
+1. Click on 'Register' to sign up.
+
+      
