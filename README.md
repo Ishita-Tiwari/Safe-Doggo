@@ -20,7 +20,6 @@ Safe Doggo brings to you another way to keep your pet safe. This website is buil
 
 1. Now log in using the new username created by you.
 
-      ![image](https://user-images.githubusercontent.com/51106967/99421030-f1aa5c00-2923-11eb-8b56-4e46176ea041.png)
       <p align="center">
          <img src="https://user-images.githubusercontent.com/51106967/99421030-f1aa5c00-2923-11eb-8b56-4e46176ea041.png" alt="drawing" width="650"/>
       </p>
@@ -47,3 +46,13 @@ Hey, You are done! If you wish to view the details for which you have generated 
 
 
 ## Steps to be followed for a 'Quick Try':
+
+1. After heading to [Safe Doggo](https://safe-doggo.herokuapp.com/), click on 'Quick Try' present in the navigation bar.
+
+      <p align="center">
+         <img src="![image](https://user-images.githubusercontent.com/51106967/99443534-f4677a00-2940-11eb-85b9-dbef330cef50.png)" alt="drawing" width="650"/>
+      </p>
+
+Enter the necessary details and submit. You're done!
+
+#### Thank you and hope you like the site! 
